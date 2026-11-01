@@ -115,6 +115,10 @@ main h1 {
     object-fit: cover;
 }
 
+.card-content img.portrait {
+    object-position: center top;
+}
+
 footer {
     padding: 1.25rem 1rem;
     background-color: var(--color-navy);
