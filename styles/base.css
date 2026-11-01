@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    color-scheme: light;
+    --color-ink: #1c2b36;
+    --color-navy: #142b3b;
+    --color-green: #145640;
+    --color-gold: #f2c14e;
+    --color-paper: #f2f5f4;
+    --color-white: #fff;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: "Lato", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--color-navy);
+    color: var(--color-white);
+}
+
+#course-title {
+    display: block;
+    padding: 1.25rem 1rem;
+    color: var(--color-gold);
+    font-family: "Merriweather", Georgia, serif;
+    font-size: clamp(1.25rem, 3vw, 2rem);
+    font-weight: 700;
+    text-align: center;
+}
+
+nav {
+    background-color: var(--color-green);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    padding: 0.8rem 1rem;
+    color: var(--color-white);
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 160ms ease, color 160ms ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    background-color: var(--color-gold);
+    color: var(--color-navy);
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    width: min(100% - 2rem, 1000px);
+    margin: 2rem auto;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+    margin: 0;
+    color: var(--color-navy);
+    font-family: "Merriweather", Georgia, serif;
+    text-align: center;
+}
+
+.card {
+    overflow: hidden;
+    border: 1px solid #d5dfdc;
+    border-radius: 0.5rem;
+    background-color: var(--color-white);
+    box-shadow: 0 0.25rem 0.9rem rgb(20 43 59 / 10%);
+}
+
+.card h2 {
+    margin: 0;
+    padding: 0.85rem 1rem;
+    background-color: var(--color-navy);
+    color: var(--color-white);
+    font-family: "Merriweather", Georgia, serif;
+    font-size: 1.15rem;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content p {
+    margin: 0 0 1rem;
+}
+
+.card-content img {
+    display: block;
+    width: 100%;
+    max-height: 320px;
+    border-radius: 0.25rem;
+    object-fit: cover;
+}
+
+footer {
+    padding: 1.25rem 1rem;
+    background-color: var(--color-navy);
+    color: var(--color-white);
+    text-align: center;
+}
+
+footer p {
+    margin: 0.25rem;
+}
+
+footer p:first-child {
+    color: var(--color-gold);
+    font-weight: 700;
+}
+
+@media (max-width: 650px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    nav li {
+        flex: 1 1 45%;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        width: min(100% - 1.25rem, 480px);
+        margin: 1.25rem auto;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    nav a {
+        transition: none;
+    }
+}
