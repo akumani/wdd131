@@ -3,12 +3,14 @@
 }
 
 :root {
-    color-scheme: light;
-    --color-ink: #1c2b36;
+    color-scheme: dark;
+    --color-ink: #f1f5f9;
     --color-navy: #142b3b;
-    --color-green: #145640;
+    --color-green: #9ed5bd;
     --color-gold: #f2c14e;
-    --color-paper: #f2f5f4;
+    --color-paper: #0b1117;
+    --color-card: #18232d;
+    --color-border: #354653;
     --color-white: #fff;
 }
 
@@ -104,7 +106,7 @@ main {
 
 h1 {
     margin: 0 0 1.25rem;
-    color: var(--color-navy);
+    color: var(--color-gold);
     font-family: "Merriweather", Georgia, serif;
     font-size: clamp(1.6rem, 5vw, 2.2rem);
     text-align: center;
@@ -119,23 +121,23 @@ h1 {
 figure {
     overflow: hidden;
     margin: 0;
-    border: 1px solid #d5dfdc;
+    border: 1px solid var(--color-border);
     border-radius: 0.5rem;
-    background-color: var(--color-white);
-    box-shadow: 0 0.25rem 0.9rem rgb(20 43 59 / 10%);
+    background-color: var(--color-card);
+    box-shadow: 0 0.25rem 0.9rem rgb(0 0 0 / 25%);
 }
 
 figure img {
     display: block;
     width: 100%;
     aspect-ratio: 640 / 420;
-    background-color: #e7f0f5;
+    background-color: var(--color-card);
     object-fit: contain;
 }
 
 figcaption {
     padding: 0.8rem 1rem;
-    color: var(--color-navy);
+    color: var(--color-ink);
     font-weight: 700;
     text-align: center;
 }
