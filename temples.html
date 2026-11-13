@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore a collection of temples from around the world.">
+    <meta name="author" content="Akumani Edem">
+    <title>Temple Album | WDD 131</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <span class="site-title">Temple Album</span>
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="primary-nav" aria-expanded="false">
+                <span class="menu-icon" aria-hidden="true">☰</span>
+            </button>
+            <nav id="primary-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#gallery" data-filter="all" aria-current="page">Home</a></li>
+                    <li><a href="#gallery" data-filter="old">Old</a></li>
+                    <li><a href="#gallery" data-filter="new">New</a></li>
+                    <li><a href="#gallery" data-filter="large">Large</a></li>
+                    <li><a href="#gallery" data-filter="small">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="gallery">
+        <h1>Temples</h1>
+        <div class="temple-grid">
+            <figure data-age="old" data-size="large">
+                <img src="images/salt-lake-temple.jpg" alt="The Salt Lake Temple and its spires above the surrounding gardens" width="355" height="400" loading="lazy" decoding="async">
+                <figcaption>
+                    Salt Lake Temple
+                    <small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Salt_Lake_Temple,_Utah_-_Sept_2004.jpg">Diliff</a> / <a href="https://creativecommons.org/licenses/by/2.5/">CC BY 2.5</a> (resized)</small>
+                </figcaption>
+            </figure>
+            <figure data-age="new" data-size="large">
+                <img src="images/accra-temple.jpg" alt="The Accra Ghana Temple in its landscaped grounds" width="400" height="300" loading="lazy" decoding="async">
+                <figcaption>
+                    Accra Ghana Temple
+                    <small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Accra_Temple_-_panoramio.jpg">Nate N.</a> / <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> (resized)</small>
+                </figcaption>
+            </figure>
+            <figure data-age="old" data-size="small">
+                <img src="images/laie-temple.jpg" alt="The Laie Hawaii Temple viewed from the front" width="400" height="299" loading="lazy" decoding="async">
+                <figcaption>
+                    Laie Hawaii Temple
+                    <small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:LDS_Laie_Hawaii_Temple_front_view.jpg">Gh5046</a> / Public domain (resized)</small>
+                </figcaption>
+            </figure>
+            <figure data-age="new" data-size="large">
+                <img src="images/rome-temple.jpg" alt="The Rome Italy Temple at sunset, reflected in a fountain" width="300" height="400" loading="lazy" decoding="async">
+                <figcaption>
+                    Rome Italy Temple
+                    <small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:RomeTempleatSunset.jpg">Mbattista22</a> / <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> (resized)</small>
+                </figcaption>
+            </figure>
+            <figure data-age="old" data-size="large">
+                <img src="images/cardston-temple.jpg" alt="The Cardston Alberta Temple illuminated at dusk" width="400" height="266" loading="lazy" decoding="async">
+                <figcaption>
+                    Cardston Alberta Temple
+                    <small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Cardston_Alberta_Mormon_Temple_2011.jpg">Matthias Süßen</a> / <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> (resized)</small>
+                </figcaption>
+            </figure>
+            <figure data-age="new" data-size="small">
+                <img src="images/paris-temple.jpg" alt="A view of the Paris France Temple tower against the evening sky" width="400" height="266" loading="lazy" decoding="async">
+                <figcaption>
+                    Paris France Temple
+                    <small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Temple_mormon_de_Paris_au_Chesnay_le_8_avril_2017_-_28.jpg">Lionel Allorge</a> / <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> (resized)</small>
+                </figcaption>
+            </figure>
+            <figure data-age="new" data-size="large">
+                <img src="images/tokyo-temple.jpg" alt="The Tokyo Japan Temple and its central spire" width="300" height="400" loading="lazy" decoding="async">
+                <figcaption>
+                    Tokyo Japan Temple
+                    <small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Tokyo_Japan_Temple.jpg">horschmology</a> / <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a> (resized)</small>
+                </figcaption>
+            </figure>
+            <figure data-age="new" data-size="large">
+                <img src="images/washington-temple.jpg" alt="The Washington D.C. Temple illuminated at dusk" width="400" height="272" loading="lazy" decoding="async">
+                <figcaption>
+                    Washington D.C. Temple
+                    <small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Washington_D.C._Temple_At_Dusk.jpg">Joe Ravi</a> / <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> (resized)</small>
+                </figcaption>
+            </figure>
+            <figure data-age="old" data-size="large">
+                <img src="images/nauvoo-temple.jpg" alt="A close view of the Nauvoo Illinois Temple's stone exterior" width="400" height="400" loading="lazy" decoding="async">
+                <figcaption>
+                    Nauvoo Illinois Temple
+                    <small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Nauvoo_Illinois_Temple,_Looking_Up_in_Color.jpg">Altus Photo Design</a> / <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a> (resized)</small>
+                </figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Akumani Edem | Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
