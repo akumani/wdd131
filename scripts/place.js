@@ -6,6 +6,8 @@ const temperature = 29;
 const windSpeed = 8;
 
 currentYear.textContent = new Date().getFullYear();
+const modifiedDate = new Date(document.lastModified);
+lastModified.dateTime = modifiedDate.toISOString();
 lastModified.textContent = document.lastModified;
 
 if (temperature <= 10 && windSpeed > 4.8) {
