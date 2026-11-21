@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Koforidua, the capital of Ghana's Eastern Region, through local facts, a city view, and weather information.">
+    <meta name="author" content="Akumani Edem">
+    <title>Koforidua, Ghana | WDD 131</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <h1>Koforidua, Ghana</h1>
+    </header>
+    <main class="place-page">
+        <div class="hero">
+            <picture>
+                <source
+                    type="image/webp"
+                    srcset="images/place-small.webp 640w, images/place-medium.webp 1280w, images/place-large.webp 1920w"
+                    sizes="(min-width: 1200px) 1200px, 100vw"
+                >
+                <img
+                    src="images/place-small.webp"
+                    alt="Aerial view of Koforidua township and market in Ghana"
+                    width="1920"
+                    height="1080"
+                    fetchpriority="high"
+                >
+            </picture>
+        </div>
+        <div class="place-panels">
+            <section class="info-panel data-panel" aria-labelledby="data-heading">
+                <h2 id="data-heading">Data</h2>
+                <dl>
+                    <dt>Location:</dt>
+                    <dd>Eastern Region, Ghana</dd>
+                    <dt>Population:</dt>
+                    <dd>About 127,000 (2021)</dd>
+                    <dt>National capital:</dt>
+                    <dd>Accra</dd>
+                    <dt>Languages:</dt>
+                    <dd>English, Akan</dd>
+                    <dt>Currency:</dt>
+                    <dd>Ghanaian cedi (GHS)</dd>
+                    <dt>Time zone:</dt>
+                    <dd>GMT (UTC+0)</dd>
+                    <dt>Calling code:</dt>
+                    <dd>+233</dd>
+                    <dt>Internet TLD:</dt>
+                    <dd>.gh</dd>
+                </dl>
+            </section>
+            <section class="info-panel weather-panel" aria-labelledby="weather-heading">
+                <h2 id="weather-heading">Weather</h2>
+                <img class="weather-icon-mobile" src="images/weather-partly-cloudy.svg" alt="" width="72" height="72">
+                <dl>
+                    <dt>Temperature:</dt>
+                    <dd><span id="temperature">29</span> °C</dd>
+                    <dt>Conditions:</dt>
+                    <dd>Partly cloudy</dd>
+                    <dt>Wind:</dt>
+                    <dd><span id="wind-speed">8</span> km/h</dd>
+                    <dt>Wind Chill:</dt>
+                    <dd id="wind-chill">N/A</dd>
+                </dl>
+            </section>
+        </div>
+        <p class="photo-credit">
+            Photo by <a href="https://commons.wikimedia.org/wiki/File:Koforidua_Township_and_Market.jpg">Samson Craig McArthur Sik</a>,
+            licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> (cropped and optimized).
+        </p>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Akumani Edem | Ghana</p>
+        <p>Last modified: <time id="lastModified"></time></p>
+    </footer>
+</body>
+</html>
